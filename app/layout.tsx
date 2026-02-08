@@ -3,6 +3,7 @@ import "./globals.css";
 import SiteHeader from "@/components/siteheader";
 import SiteFooter from "@/components/sitefooter";
 import Script from "next/script";
+import FloatingWhatsApp from "@/components/floating-whatsapp";
 
 export const metadata = {
   title: "IME Digital Solutions",
@@ -28,8 +29,10 @@ export default function RootLayout({
         ) : null}
 
         <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+<main>{children}</main>
+<FloatingWhatsApp />
+<SiteFooter />
+
       </body>
     </html>
   );
